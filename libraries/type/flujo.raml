@@ -1,0 +1,32 @@
+#%RAML 1.0 Library
+usage:
+  data type for body of flujo.
+types:
+  flujo:
+    description: state of the transacction in the orchestration.
+    properties:
+      estado:
+        type: string
+        enum: [iniciar, finalizar, reglaSeguridad, imagenCheque, verDetallesFactura]
+        maxLength: 20
+        required: true
+        description: initial state of the flow.
+      campos:
+        properties:
+          campo:
+            type: array
+            items: campo
+            required: true
+        required: true
+  campo:
+    type: object
+    description: Attributes for details of the transacction with the interaction the screen.
+    properties:
+      clave:
+        type: string
+        required: true
+        description: key of detail.
+      valor:
+        type: string
+        required: true
+        description: value for the key.

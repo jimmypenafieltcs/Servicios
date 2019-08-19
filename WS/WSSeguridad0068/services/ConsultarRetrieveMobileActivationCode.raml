@@ -1,0 +1,28 @@
+#%RAML 1.0
+title: WSSeguridad0068
+baseUri: /Omnicanalidad/IntegrationBus/WSSeguridad0068
+version: v1.0
+description: Micro services that allows retrieve activation code from web service DetectID Cyxtera
+uses:
+  request: ../resourceTypes/request.raml
+  response: ../resourceTypes/response.raml
+/WSSeguridad0068:
+  post:
+    body:
+      application/json:
+        type: request.consultarMobileActivationCodeDetectId01
+        examples:
+          # validate client code
+          case_1: !include ../examples/case_1/InputFlowSample_1.json
+          # validate client code
+          case_2: !include ../examples/case_2/InputFlowSample_2.json
+    responses:
+      200:
+        body:
+          application/json:
+            type: response.consultarMobileActivationCodeDetectId01Response
+            examples:
+              # Transacction OK. validate client code successful
+              case_1: !include ../examples/case_1/OutputFlowSample_1.json
+              # Transacction fail: validate client code error
+              case_2: !include ../examples/case_2/OutputFlowSample_2.json

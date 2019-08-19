@@ -1,0 +1,24 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  result retrieve devices registered from detectID
+types:
+  detectId:
+    description: result retrieve devices registered from detectID
+    properties:
+      retrieveMobileActivationCodeResponse:
+        properties:
+          resultCode:
+            type: number
+            required: true
+            description: code after retrieve devices
+          resultDescription:
+            type: string
+            maxLength: 300
+            required: true
+            description: description code
+          activationCode:
+            type: string
+            required: true
+            description:  activation code

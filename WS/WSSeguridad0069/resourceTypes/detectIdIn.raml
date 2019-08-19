@@ -1,0 +1,31 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  data is necesary for retrieve activation code from detectID
+types:
+  detectId:
+    description: data is necesary for retrieve activation code from detectID
+    properties:
+      createClient:
+        properties:
+          sharedKey:
+            type: string
+            maxLength: 50
+            required: true
+            description:  shared client code
+          businessIdentifier:
+            type: string
+            maxLength: 60
+            required: true
+            description: name or description of client
+          mail:
+            type: string
+            maxLength: 60
+            required: true
+            description: email address of client
+          cellPhoneNumber:
+            type: string
+            maxLength: 60
+            required: true
+            description: mobile number of client

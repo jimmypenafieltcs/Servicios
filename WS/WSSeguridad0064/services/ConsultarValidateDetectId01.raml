@@ -1,0 +1,32 @@
+#%RAML 1.0
+title: WSSeguridad0064
+baseUri: /Omnicanalidad/IntegrationBus/WSSeguridad0064
+version: v1.0
+description: Micro services that allows validate client code (softoken) againt web service DetectID Cyxtera
+uses:
+  request: ../resourceTypes/request.raml
+  response: ../resourceTypes/response.raml
+/WSSeguridad0064:
+  post:
+    body:
+      application/json:
+        type: request.consultarValidateDetectId01
+        examples:
+          # validate client code
+          case_1: !include ../examples/case_1/InputFlowSample_1.json
+          # validate client code
+          case_2: !include ../examples/case_2/InputFlowSample_2.json
+          # validate client code
+          case_3: !include ../examples/case_3/InputFlowSample_3.json
+    responses:
+      200:
+        body:
+          application/json:
+            type: response.consultarValidateDetectId01Response
+            examples:
+              # Transacction OK. validate client code successful
+              case_1: !include ../examples/case_1/OutputFlowSample_1.json
+              # Transacction fail: validate client code error
+              case_2: !include ../examples/case_2/OutputFlowSample_2.json
+              # Transacction fail: validate client code error
+              case_3: !include ../examples/case_3/OutputFlowSample_3.json

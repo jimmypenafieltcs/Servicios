@@ -1,0 +1,38 @@
+{
+  "consultarMobileActivationCodeDetectId01": {
+    "headerIn": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "03",
+      "medio": "030001",
+      "aplicacion": "00663",
+      "agencia": "",
+      "tipoTransaccion": "205006701",
+      "geolocalizacion": "",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2/QovFagnnS+nQSGAF/SKyTIIv1axc=",
+      "guid": "3F2504E04F8911D39A0C0305E82C3302",
+      "fechaHora": "201906031313131262",
+      "filler": "",
+      "idioma": "es-EC",
+      "sesion": "ASDASD77R01YH",
+      "ip": "10.192.168.45",
+      "idCliente": "1720166329",
+      "tipoIdCliente": "0001"
+    },
+    "bodyIn": {
+      "ordenante": {
+        "identificacion": "1720166329",
+        "tipoIdentificacion": "0001"
+      },
+      "detectId": {
+        "retrieveMobileActivationCode": {
+          "processContext": {
+            "channelId": "VIP channel"
+          },
+          "sharedKey": "jvalenc"
+        }
+      }
+    }
+  }
+}

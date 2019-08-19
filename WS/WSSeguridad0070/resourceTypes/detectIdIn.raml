@@ -1,0 +1,21 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  unregistered device from DetectId
+types:
+  detectId:
+    description: unregistered device from DetectId
+    properties:
+      unregisterDevice:
+        properties:
+          sharedKey:
+            type: string
+            maxLength: 50
+            required: true
+            description:  shared client code
+          deviceId:
+            type: string
+            maxLength: 60
+            required: true
+            description: unique id device

@@ -1,0 +1,59 @@
+{
+  "consultarDispositivosDetectId01Response": {
+    "headerOut": {
+      "dispositivo": "01010101010101010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "03",
+      "medio": "030001",
+      "aplicacion": "00663",
+      "agencia": "0016",
+      "tipoTransaccion": "205006701",
+      "geolocalizacion": "-0.171152, -78.484886",
+      "usuario": "USINTERT",
+      "unicidad": "JHGSD545gfgsvx4scasdasd-1232seuoad",
+      "guid": "a5542ac4-b9d0-4c25-863b-fc294941f830",
+      "fechaHora": "201906251859240388",
+      "filler": "AUTH-03006630002",
+      "idioma": "es-EC",
+      "sesion": "cbe3e85d-bb2c-43e2-96b3-7191938af9a7",
+      "ip": "69.69.69.69",
+      "idCliente": "1720132339",
+      "tipoIdCliente": "0001"
+    },
+    "bodyOut": {
+      "detectId":{
+        "retrieveForClientAllRegisteredDevicesResponse": {
+          "resultCode": 937,
+          "resultDescription": "Data retrieved successfully for client jsmith",
+          "devices": [
+            {
+              "activated": "true",
+              "description": "iOS 8.1.2",
+              "id": "1fb626cd60f08361c8f7706147031f40-3",
+              "model": "John iPad’ (iPad)",
+              "os": "IOs",
+              "sharedKey": "jsmith"
+            },
+            {
+              "activated": "false",
+              "description": "iOS 9.1.2",
+              "id": "3F2504E04F8911D39A0C0305E82C330-2",
+              "model": "iPad X (iPad)",
+              "os": "IOs",
+              "sharedKey": "jsmith"
+            }
+          ]
+        }
+      }
+    },
+    "error": {
+      "codigo": "0",
+      "mensaje": "TCSBRKT4_Data retrieved successfully for client jsmith",
+      "mensajeNegocio": "La consulta retornó exitosamente los dispositivos registrados para el cliente especificado",
+      "tipo": "INFO",
+      "recurso": "WSSeguridad002X/consultarretrieveForClientAllRegisteredDevices01Response",
+      "componente": "consultarretrieveForClientAllRegisteredDevices01Response",
+      "backend": "00635"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+#%RAML 1.0 Library
+usage:
+  Data type for input header for each service
+types:
+  headerIn:
+    properties:
+      dispositivo:
+        type: string
+        maxLength: 44
+        required: true
+        description: Device Hash takes it from claims
+      empresa:
+        type: string
+        maxLength: 5
+        required: true
+        description: company code 0010 by default
+      canal:
+        type: string
+        maxLength: 2
+        required: true
+        description: Code channel defined by business architecture WSO2 will send in the Claim
+      medio:
+        type: string
+        maxLength: 6
+        required: true
+        description: Medium code defined by business architecture WSO2 will send in the Claim
+      aplicacion:
+        type: string
+        maxLength: 5
+        required: true
+        description: Application code defined by business architecture WSO2 will send in the Claim
+      agencia:
+        type: string
+        maxLength: 25
+        required: true
+        description: code of the agency where the user is registered
+      tipoTransaccion:
+        type: string
+        maxLength: 9
+        required: true
+        description: Application code defined by enterprise architecture each application must place this value is the transactional log transaction type.
+        example: "301000201"
+      geolocalizacion:
+        type: string
+        required: true
+        description: field describes the geolocation
+      usuario:
+        type: string
+        maxLength: 10
+        required: true
+        description: generic user of the default transaction
+      unicidad:
+        type: string
+        maxLength: 70
+        required: true
+        description: HASH of the transaction component is generated with the uniqueness component
+      guid:
+        type: string
+        maxLength: 40
+        required: true
+        description: Unique identifier of the transaction
+      fechaHora:
+        type: string
+        maxLength: 18
+        required: true
+        description: date and time of transaction yyyyMMddhhmmssSSSS
+      filler:
+        type: string
+        maxLength: 50
+        required: false
+        description: If additional fields are required, it must be previously agreed
+      idioma:
+        type: string
+        maxLength: 5
+        required: true
+        description: Language WSO2 will send on the Claim
+        example: "es-ec"
+      sesion:
+        type: string
+        required: true
+        description: Session generated in WSO2 is sent in the claim
+      ip:
+        type: string
+        maxLength: 15
+        required: true
+        description: Client IP address
+      idCliente:
+        type: string
+        maxLength: 17
+        required: false
+        description: customer identification
+        example: "1715485248"
+      tipoIdCliente:
+        type: string
+        maxLength: 5
+        required: false
+        description: customer identification type

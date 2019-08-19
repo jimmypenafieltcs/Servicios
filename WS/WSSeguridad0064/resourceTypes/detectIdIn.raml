@@ -1,0 +1,28 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  data is necesary for validate token in detectID
+types:
+  detectId:
+    description: data is necesary for validate token in detectID
+    properties:
+      validate:
+        properties:
+          processContext:
+            properties:
+              channelId:
+                type: string
+                maxLength: 60
+                required: true
+                description: channel identifier
+          sharedKey:
+            type: string
+            maxLength: 60
+            required: true
+            description: shared client code
+          otp:
+            type: string
+            maxLength: 10
+            required: true
+            description:  code token

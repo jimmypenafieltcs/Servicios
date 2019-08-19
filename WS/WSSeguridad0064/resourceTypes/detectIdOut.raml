@@ -1,0 +1,24 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  data is necesary for validate token in detectID
+types:
+  detectId:
+    description: data is necesary for validate token in detectID
+    properties:
+      validateResponse:
+        properties:
+          resultCode:
+            type: number
+            required: true
+            description: response validate code in web service detectId
+          resultDescription:
+            type: string
+            maxLength: 300
+            required: true
+            description: detail about validate code
+          remainingFailedAttempts:
+            type: number
+            required: true
+            description:  remaining attempts

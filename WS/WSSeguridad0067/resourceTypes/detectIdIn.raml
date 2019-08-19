@@ -1,0 +1,16 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  data is necesary for retrieve devices registered from detectID
+types:
+  detectId:
+    description: data is necesary for retrieve devices registered from detectID
+    properties:
+      retrieveForClientAllRegisteredDevices:
+        properties:
+          sharedKey:
+            type: string
+            maxLength: 50
+            required: true
+            description:  shared client code

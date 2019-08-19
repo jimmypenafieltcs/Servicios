@@ -1,0 +1,27 @@
+#%RAML 1.0 Library
+usage: error
+types:
+  error:
+    properties:
+      codigo:
+        type: string
+        description: response code of zero orchestration is ok, different error
+      mensaje:
+        type: string
+        description: Orchestration response message
+      mensajeNegocio:
+        type: string
+        description: Orchestration response message
+      tipo:
+        type: string
+        description: type of error returned by the orchestrator, fatal example
+      recurso:
+        type: string
+        description: describes where the error was spread
+      componente:
+        type: string
+        description: describes what method the error propagated
+      backend:
+        type: string
+        maxLength: 5
+        description: code of the invoked application

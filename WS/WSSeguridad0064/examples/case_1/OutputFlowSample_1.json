@@ -1,0 +1,43 @@
+{
+  "consultarValidateDetectId01Response": {
+    "headerOut": {
+      "dispositivo": "01010101010101010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "03",
+      "medio": "030001",
+      "aplicacion": "00663",
+      "agencia": "0016",
+      "tipoTransaccion": "205006701",
+      "geolocalizacion": "-0.171152, -78.484886",
+      "usuario": "USINTERT",
+      "unicidad": "JHGSD545gfgsvx4scasdasd-1232seuoad",
+      "guid": "a5542ac4-b9d0-4c25-863b-fc294941f830",
+      "fechaHora": "201906251859240388",
+      "filler": "AUTH-03006630002",
+      "idioma": "es-EC",
+      "sesion": "cbe3e85d-bb2c-43e2-96b3-7191938af9a7",
+      "ip": "69.69.69.69",
+      "idCliente": "1720132339",
+      "tipoIdCliente": "0001"
+    },
+    "bodyOut": {
+      "detectId":{
+        "validateResponse":{
+          "resultCode": 801,
+          "resultDescription": "El OTP es válido",
+          "remainingFailedAttempts": 2
+
+        }
+      }
+    },
+    "error": {
+      "codigo": "801",
+      "mensaje": "TCSBRKT4_ El OTP es válido",
+      "mensajeNegocio": "cogio OTP es válido",
+      "tipo": "INFO",
+      "recurso": "ORQSeguridad0023/consultarValidateDetectId01Response",
+      "componente": "consultarValidateDetectId01Response",
+      "backend": "00635"
+    }
+  }
+}

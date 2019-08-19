@@ -1,0 +1,11 @@
+#%RAML 1.0 Library
+uses:
+ detectId: detectIdOut.raml
+usage:
+ detail reponse
+types:
+  bodyOut:
+    properties:
+         detectId:
+           type: detectId.detectId
+           required: true
