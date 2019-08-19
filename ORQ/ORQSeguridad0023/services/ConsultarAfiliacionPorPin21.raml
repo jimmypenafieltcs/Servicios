@@ -1,0 +1,40 @@
+#%RAML 1.0
+title: ORQSeguridad0023
+baseUri: /Omnicanalidad/IntegrationBus/ORQSeguridad0023
+version: v1.0
+description: Orchestration that allows consulting the pin status in TOTEM, validate client in database omnichannel 
+uses:
+  request: ../resourceTypes/request.raml
+  response: ../resourceTypes/response.raml
+/ORQSeguridad0023:
+  post:
+    body:
+      application/json:
+        type: request.ConsultarAfiliacionPorPin21
+        examples:
+          # Those data invoke the orchestrator that validate status client, totem pin, register footprint, generate device, send notification email
+          case_1: !include ../examples/case_1/InputFlowSample_1.json
+          # Those data invoke the orchestrator that validate status client, totem pin, register footprint, generate device, send notification email
+          case_2: !include ../examples/case_2/InputFlowSample_2.json
+          # Those data invoke the orchestrator that validate status client, totem pin, register footprint, generate device, send notification email
+          case_3: !include ../examples/case_3/InputFlowSample_3.json
+          # Those data invoke the orchestrator that validate status client, totem pin, register footprint, generate device, send notification email
+          case_4: !include ../examples/case_4/InputFlowSample_4.json
+          # Those data invoke the orchestrator that validate status client, totem pin, register footprint, generate device, send notification email
+          case_5: !include ../examples/case_5/InputFlowSample_5.json
+    responses:
+      200:
+        body:
+          application/json:
+            type: response.ConsultarAfiliacionPorPin21Response
+            examples:
+              # Transacction fail: dni or client identification  invalidate
+              case_1: !include ../examples/case_1/OutputFlowSample_1.json
+              # Transacction fail: client not afiliate to banca web or inactive status in database omnichannel
+              case_2: !include ../examples/case_2/OutputFlowSample_2.json
+              # Transacction fail: invalid pin
+              case_3: !include ../examples/case_3/OutputFlowSample_3.json
+              # Transacction OK: return data for access. Client exists in core
+              case_4: !include ../examples/case_4/OutputFlowSample_4.json
+              # Transacction fail: The client is not allowed to execute any transactions in mobile phone
+              case_5: !include ../examples/case_5/OutputFlowSample_5.json

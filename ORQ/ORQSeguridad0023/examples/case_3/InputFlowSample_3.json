@@ -1,0 +1,66 @@
+{
+	"ConsultarAfiliacionPorPin21": {
+		"headerIn": {
+			"dispositivo": "01010101010101010101010101010101010101010101",
+			"empresa": "0010",
+			"canal": "03",
+			"medio": "030001",
+			"aplicacion": "00663",
+			"agencia": "0016",
+			"tipoTransaccion": "305002321",
+			"geolocalizacion": "-0.171152, -78.484886",
+			"usuario": "USINTERT",
+			"unicidad": "JHGSD545gfgsvx4scasdasd-1232seuoad",
+			"guid": "a5542ac4-b9d0-4c25-863b-fc294941f830",
+			"fechaHora": "201906251859240388",
+			"filler": "AUTH-03006630002",
+			"idioma": "es-EC",
+			"sesion": "cbe3e85d-bb2c-43e2-96b3-7191938af9a7",
+			"ip": "69.69.69.69",
+			"idCliente": "1720132339",
+			"tipoIdCliente": "0001"
+		},
+		"bodyIn": {
+			"ordenante": {
+				"identificacion": "1720132339",
+				"tipoIdentificacion": "0001"
+			},
+			"dataPinTotem":{
+				"operationCode":"VAPIN",
+				"ownerId":"1720132339",
+				"phoneNumber":"0997454380", 
+				"currentPin":"/py4G4ECA03zXHqmMsnXyWLEHQDgEYIkLgldrCBIgWrL8FXN2crS5v7GyyUs4W08",
+				"newPin":"", 
+				"newStatus":"", 
+				"application":"00663", 
+				"channel":"03"
+			},
+			"atributos": {
+				"uniqueId": "FCDBD8EF-62FC-4ECB-B2F5-92C9E79AC7F9",
+				"brand":"Xiaomi",
+				"systemVersion":"9.1.0",
+				"model":"iPhone 7",
+				"deviceId":"goldfish", 
+				"carrier":"CONECEL, CLARO",
+				"readableVersion":"1.0.1",
+				"epoch":"1562182200",
+				"ipIspAddress": "70.70.70.70",
+				"latitude":"-0.171152",
+				"longitude":"-78.484886",
+				"version":"1.0",
+				"systemName": "Android",
+				"timeZone": "Ecuador/Quito",
+				"macAddress":"a4:5d:36:58:38:fb",
+				"messageHeader": "ecuio197m087:9443;text/html;utf-8,application/xml;es-ES;gzip, deflate, br;keep-alive;1;Tue, 15 Nov 1994 08:12:31 GMT;application/x-www-form-urlencoded;no-cache;129.78.138.66, 129.78.64.103"
+				
+			},
+			"flujo": {
+				"estado": "finalizar",
+				"campos": {
+					"campo": [
+					]
+				}
+			}
+		}
+	}
+}

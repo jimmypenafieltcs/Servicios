@@ -1,0 +1,16 @@
+footprint:
+	uniqueId, 
+	brand, 
+	systemVersion, 
+	model,
+	deviceId, 
+	carrier
+	readableVersion,
+	epoch,
+	ipIspAddress, 
+	geolocalizacion,
+	version,
+	systemName, 
+	timeZone, 
+	macAddress,
+	messageHeader

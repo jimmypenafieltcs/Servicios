@@ -1,0 +1,21 @@
+#%RAML 1.0 Library
+uses:
+ ordenante : ordenante.raml
+ dataPinTotem: dataPinTotem.raml
+ atributos : atributos.raml
+ flujo : ../../libraries/type/flujo.raml
+usage:
+  for get and validate CIF user in core and pin in provider TOTEM
+types:
+  bodyIn:
+    properties:
+         ordenante:
+           type: ordenante.ordenante
+           required: true
+         dataPinTotem:
+           type: dataPinTotem.dataPinTotem
+           required: true
+         atributos:
+           type: atributos.atributos
+         flujo:
+           type: flujo.flujo

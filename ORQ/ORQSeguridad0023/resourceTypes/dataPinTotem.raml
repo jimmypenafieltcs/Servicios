@@ -1,0 +1,58 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  data for invokes TOTEM web services
+types:
+  dataPinTotem:
+    description: data for invokes TOTEM web services
+    properties:
+      operationCode:
+        type: string
+        maxLength: 10
+        required: true
+        description: operation define for TOTEM. Review technical manual
+        example: VAPIN
+      ownerId:
+        type: string
+        maxLength: 10
+        required: true
+        description: user identification 
+        example: "1720132339"
+      phoneNumber:
+        type: string
+        maxLength: 10
+        required: true
+        description: operation define for TOTEM. Review technical manual
+        example: VAPIN
+      currentPin:
+        type: string
+        maxLength: 64
+        required: true
+        description: user current pin 
+        example: "/py4G4ECA03zXHqmMsnXyWLEHQDgEYIkLgldrCBIgWrL8FXN2crS5v7GyyUs4W08"
+      newPin:
+        type: string
+        minLength: 0
+        required: false
+        description: when you need to set a new pin, in this case not necessary. Review technical manual 
+        example: ""
+      newStatus:
+        type: string
+        minLength: 0
+        required: false
+        description: when you need to set a new status pin, in this case not necessary. Review technical manual 
+        example: ""
+      application:
+        type: string
+        maxLength: 5
+        required: false
+        description: the provider not use this data but this is necessary audit cases
+        example: "00663"
+      channel:
+        type: string
+        maxLength: 2
+        required: false
+        description: the provider not use this data but this is necessary audit cases
+        example: "03"  
+

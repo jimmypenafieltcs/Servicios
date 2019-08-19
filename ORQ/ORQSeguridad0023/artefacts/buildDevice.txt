@@ -1,0 +1,8 @@
+Device:
+	uniqueId,
+	brand,
+	systemVersion,
+	deviceId,
+	systemName,
+	macAdrees,
+	messageHeader

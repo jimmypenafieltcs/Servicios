@@ -1,0 +1,89 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  data is necesary for create footprint and device.
+types:
+  atributos:
+    description: data for build device and footprint
+    properties:
+      uniqueId:
+        type: string
+        maxLength: 64
+        required: true
+        description: is necessary, this is the mobile phone device unique ID
+      brand:
+        type: string
+        maxLength: 20
+        required: true
+        description:  the device brand  
+      systemVersion:
+        type: string
+        maxLength: 20
+        required: true
+        description: system version 
+      model:
+        type: string
+        maxLength: 20
+        required: true
+        description: The device model
+      deviceId:
+        type: string
+        maxLength: 15
+        required: true
+        description:  the device ID
+      carrier:
+        type: string
+        maxLength: 50
+        required: true
+        description: The carrier name (network operator)
+      readableVersion:
+        type: string
+        maxLength: 10
+        required: true
+        description: The application human readable version.
+      epoch:
+        type: string
+        maxLength: 30
+        required: true
+        description: An epoch, for the purposes of chronology and periodization
+      ipIspAddress:
+        type: string
+        maxLength: 20
+        required: true
+        description: IPV4 format. The ip for internet provider service
+      latitude:
+        type: string
+        maxLength: 15
+        required: true
+        description: latitude
+      longitude:
+        type: string
+        maxLength: 15
+        required: true
+        description: longitude
+      version:
+        type: string
+        maxLength: 5
+        required: true
+        description: The application version
+      systemName:
+        type: string
+        maxLength: 15
+        required: true
+        description: the device OS name
+      timeZone:
+        type: string
+        maxLength: 30
+        required: true
+        description: The device default timezone.
+      macAddress:
+        type: string
+        maxLength: 64
+        required: true
+        description:  mac address
+      messageHeader:
+        type: string
+        maxLength: 500
+        required: true
+        description: Data is sending inside protocol request

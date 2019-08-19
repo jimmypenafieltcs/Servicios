@@ -1,0 +1,66 @@
+{
+	"ConsultarAfiliacionPorPin21Response": {
+		"headerOut": {
+			"dispositivo": "01010101010101010101010101010101010101010101",
+			"empresa": "0010",
+			"canal": "03",
+			"medio": "030001",
+			"aplicacion": "00663",
+			"agencia": "0016",
+			"tipoTransaccion": "305002321",
+			"geolocalizacion": "-0.171152, -78.484886",
+			"usuario": "USINTERT",
+			"unicidad": "JHGSD545gfgsvx4scasdasd-1232seuoad",
+			"guid": "a5542ac4-b9d0-4c25-863b-fc294941f830",
+			"fechaHora": "201906251859240388",
+			"filler": "AUTH-03006630002",
+			"idioma": "es-EC",
+			"sesion": "cbe3e85d-bb2c-43e2-96b3-7191938af9a7",
+			"ip": "69.69.69.69",
+			"idCliente": "1720132339",
+			"tipoIdCliente": "0001"
+		},		
+		"bodyOut": {
+			"flujo": {
+				"estado": "finalizar",
+				"campos": {
+					"campo": [{
+						"clave": "dispositivo",
+						"valor": "C8BgYftLdKLWJQot+gDOqHF/RdevJ2S5SHt7D+cjTOE="
+					}, {
+						"clave": "tipoIdCliente",
+						"valor": "0001"
+					}, {
+						"clave": "idCliente",
+						"valor": "V2awN/uMztHmYyPwoDbnQWIPNZTlYHAP+fBy8QQPhzKdTm6c0WamD1Qr2+Pqow48"
+					}, {
+						"clave": "ultimoLogin",
+						"valor": "2018-01-09 12:35:38.335"
+					}, {
+						"clave": "Cif",
+						"valor": "zOGKshZq30B3oBjMjUMmwGJdjsHsYcdSqew7aG/qWB4="
+					}, {
+						"clave": "medio",
+						"valor": "030001"
+					}, {
+						"clave": "aplicacion",
+						"valor": "00663"
+					}, {
+						"clave": "canal",
+						"valor": "03"
+					}
+				]
+				}
+			}
+		},
+		"error": {
+			"codigo": "0",
+			"mensaje": "OK",
+			"mensajeNegocio": "OK",
+			"tipo": "INFO",
+			"recurso": "ORQSeguridad0023/ConsultarAfiliacionPorPin21",
+			"componente": "ConsultarAfiliacionPorPin21",
+			"backend": "00045"
+		}
+	}
+}

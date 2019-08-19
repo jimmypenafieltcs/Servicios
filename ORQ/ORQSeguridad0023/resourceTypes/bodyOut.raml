@@ -1,0 +1,16 @@
+#%RAML 1.0 Library
+uses:
+
+  flujo: ../../libraries/type/flujo.raml
+
+usage:
+
+
+types:
+  bodyOut:
+    description: the principal point , is in flujo , if is "finalizar" the user and password is correct , if is "seguridad" is because the user need code of OTP is necessary redirect to widget validate OTP    .
+    properties:
+      flujo:
+        type: flujo.flujo
+        required: true
+        description: final state of flow interaction with screen for this case is posible has inicializar(start) -

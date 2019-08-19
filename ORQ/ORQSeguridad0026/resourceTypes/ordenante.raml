@@ -1,0 +1,17 @@
+#%RAML 1.0 Library
+usage:
+  data type that is part of the body of Cambiar Clave.
+types:
+  ordenante:
+    description: user and password for login .
+    properties:
+      identificacion:
+        type: string
+        required: true
+        description: user dni
+        maxLength: 24
+      tipoIdentificacion:
+        type: string
+        required: true
+        description: user or client identification type
+        maxLength: 4
