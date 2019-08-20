@@ -1,0 +1,53 @@
+WSNotificadorMSG001
+
+INPUT
+=====
+{
+  "EnviarNotificacionSms": {
+    "header": {
+      "usuario": "USINTERT",
+      "aplicacion": "INT",
+      "canal": "Y",
+      "idTransaccion": "1",
+      "promocode": "1",
+      "banco": "010",
+      "oficina": "1"
+    },
+    "body": {
+      "flujoId": "lo",
+      "codigoCanal": "i",
+      "formatoMensaje": "JSON",
+      "codigoPrioridadSms": "9732",
+      "idSesion": "DEFAULT",
+      "tipoTransaccion": "207200311",
+      "identificacion": "1720132339",
+      "ipCliente": "1.1.1.1",
+      "mensajeTexto": "bkvDfF8zbnRSeQ+kPv+lpWSVnRVz5/0M+9fbReZq0cosC17Yw3oP4Ba/VzgXIqyxzr3mMl4a2DlLGlRnznHTjBdi/8uqS0fqpHJ6hE2/1/sxwJv2Y+hKsNZVqclfNcy+hBTwR6ziIBMFU2fUyHZlDFiTIJwrvfqbVHn728JM1BsyfkSB01RNIG9FXq5rAra++gfdo8Jd6Glv2EEwUC8vYIW/VNtSlLorXZ6hkXYHpFi4bHwzIxeMMZ/kLhHtGQeXWHCRPxnsw/5JbHZLQE+XbsaIi0JEtAY6u9f5ezaPW4qrp/jRb4kdV1ca11QnCjFWKyg275QkCq3WJ6LqtX0IHjidKNlpPyZvxB+kTfESChtf7G2b8yt6Pq61Hq0VAXpH0Lk6xELBxdL3wGooe6SO/GOiW2b96Vaw1MSUcvYjZTZxizTA8iNRiCFJwn5T5WqHfxgg+XWk5GHYp+s4EjCaAr3M1SbPBaGdM7hwqLNUJ7O2f6Fcl/rHz9iwCuGhuKXZ4lLmnrafTb6pF0zSMUVA3LPxAWC2BhQSQNzdZ1JqI8KloWXPRQQ3uxUvUlj/bbi5kGRdcr05jzr3d11eQBdmoLfGgSmgnjkvmL6Hw5a8SJ5uNYvaqcZW1CqPhiaEdtpXS0tOHatLNLXZHvjDa2E+x2FT5TP5yr1qEtGyxkwwLc7ox4MaPfnE3k8CCSan+v7kW5GA7JshFIFQTwR4dHYXhALV8tdHY+KkCZmUve3KcXCZyf2MxBRmS/XKzPX/T9zXwbJ1NOKbXE5q1Sx5HbhNwND9yfaNbJnMbrydjd7xhacWrlcE6oq0QOJxYiqV8xU2",
+      "telefonoCelular": "0997349774",
+      "transaccionId": "64",
+      "tipoNotificacion": "207200311SM_ORD_0",
+      "idioma": "ES"
+    }
+  }
+}
+
+OUTPUT
+======
+{
+  "EnviarNotificacionSmsResponse": {
+    "header": {
+      "usuario": "USINTERT",
+      "aplicacion": "INT",
+      "canal": "Y",
+      "idTransaccion": "1",
+      "banco": "010",
+      "oficina": "1"
+    },
+    "body": {
+      "codigoError": "0000",
+      "mensaje": "Transacción OK, se procederá a realizar la notificación"
+    },
+    "codError": "0",
+    "descError": "OK"
+  }
+}
