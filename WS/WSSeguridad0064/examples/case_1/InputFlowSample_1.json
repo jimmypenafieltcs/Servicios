@@ -3,9 +3,9 @@
 		"headerIn": {
 			"dispositivo": "01010101010101010101010101010101",
 			"empresa": "0010",
-			"canal": "02",
-			"medio": "020002",
-			"aplicacion": "00270",
+			"canal": "03",
+			"medio": "030001",
+			"aplicacion": "00663",
 			"agencia": "",
 			"tipoTransaccion": "205006701",
 			"geolocalizacion":"",
