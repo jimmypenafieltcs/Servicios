@@ -23,18 +23,18 @@
     "bodyOut": {
       "detectId": {
         "unregisterDeviceResponse": {
-          "resultCode": 937,
-          "resultDescription": "El registro del dispositivo se eliminó correctamente."
+          "resultCode": 944,
+          "resultDescription": "eliminarDispositivoDetectId01"
         }
       }
     },
     "error": {
-      "codigo": "0",
-      "mensaje": "TCSBRKT4_Data El registro del dispositivo se eliminó correctamente.",
-      "mensajeNegocio": "El registro del dispositivo se eliminó correctamente.",
+      "codigo": "944",
+      "mensaje": "TCSBRKT4_Data El dispositivo no existe.",
+      "mensajeNegocio": "El dispositivo no existe",
       "tipo": "INFO",
-      "recurso": "WSSeguridad002X/consultarRetrieveMobileActivationCode01Response",
-      "componente": "consultarRetrieveMobileActivationCode01Response",
+      "recurso": "WSSeguridad0070/eliminarDispositivoDetectId01Response",
+      "componente": "eliminarDispositivoDetectId01Response",
       "backend": "00635"
     }
   }
