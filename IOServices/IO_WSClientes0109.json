@@ -1,0 +1,348 @@
+WSClientes0109
+
+INPUT
+=====
+{
+  "ConsultarDesautorizacion05": {
+    "headerIn": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0012",
+      "tipoTransaccion": "201010905",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4 ",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237"
+    },
+    "bodyIn": {
+      "datosCuentas": {
+        "datosCuenta": {
+          "numeroCuenta": "2202340299",
+          "moneda": "US"
+        }
+      }
+    }
+  }
+}
+
+OUTPUT
+======
+{
+  "ConsultarDesautorizacion05Response": {
+    "headerOut": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0012",
+      "tipoTransaccion": "201010905",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237",
+      "documento": {
+        "journals": {
+          "journal": {
+
+          }
+        }
+      }
+    },
+    "bodyOut": {
+      "cuentas": {
+        "cuenta": {
+          "-num": "2202340299",
+          "-desautorizacion": "S"
+        }
+      }
+    },
+    "error": {
+      "codigo": "0",
+      "mensaje": "TCSBRKT3_BP-OK",
+      "mensajeNegocio": "Transaccion exitosa.",
+      "tipo": "INFO",
+      "recurso": "WSClientes0109/ConsultarDesautorizacion05",
+      "componente": "WSClientes0109",
+      "backend": "00638"
+    }
+  }
+}
+
+
+INPUT
+=====
+{
+  "ConsultarMoraCliente01": {
+    "headerIn": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0012",
+      "tipoTransaccion": "201010901",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237"
+    },
+    "bodyIn": { "numeroId": "8001114387" }
+  }
+}
+
+
+OUTPUT
+======
+{
+  "ConsultarMoraCliente01Response": {
+    "headerOut": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0012",
+      "tipoTransaccion": "201010901",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237",
+      "documento": {
+        "journals": {
+          "journal": {
+
+          }
+        }
+      }
+    },
+    "bodyOut": { "moraExistance": "N" },
+    "error": {
+      "codigo": "0",
+      "mensaje": "TCSBRKT3_BP-OK",
+      "mensajeNegocio": "Transaccion exitosa.",
+      "tipo": "INFO",
+      "recurso": "WSClientes0109/ConsultarMoraCliente01",
+      "componente": "WSClientes0109",
+      "backend": "00638"
+    }
+  }
+}
+
+INPUT
+=====
+{
+  "ConsultarRetencionesJudiciales03": {
+    "headerIn": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0012",
+      "tipoTransaccion": "201010901",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237",
+      "idCliente": "1720132339",
+      "tipoIdCliente": "0001"
+    },
+    "bodyIn": {
+      "tipoIdentificacion": "0001",
+      "identificacion": "1714868450",
+      "datosCuentas": {
+        "datosCuenta": {
+          "numeroCuenta": "2202340299",
+          "moneda": "USD",
+          "tipoCuenta": "CC"
+        }
+      }
+    }
+  }
+}
+
+OUTPUT
+======
+
+{
+  "ConsultarRetencionesJudiciales03Response": {
+    "headerOut": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0012",
+      "tipoTransaccion": "201010901",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237",
+      "idCliente": "1720132339",
+      "tipoIdCliente": "0001",
+      "documento": {
+        "journals": {
+          "journal": {
+
+          }
+        }
+      }
+    },
+    "bodyOut": {
+      "numeroIdentificacion": "1714868450",
+      "tieneRestriccionJudicial": "N",
+      "cuentas": {
+        "cuenta": {
+          "-num": "2202340299",
+          "-restriccionJudicial": "S",
+          "-tipo": "CC"
+        }
+      }
+    },
+    "error": {
+      "codigo": "0",
+      "mensaje": "TCSBRKT3_BP-OK",
+      "mensajeNegocio": "Transaccion exitosa.",
+      "tipo": "INFO",
+      "recurso": "WSClientes0109/ConsultarRetencionesJudiciales03",
+      "componente": "WSClientes0109",
+      "backend": "00638"
+    }
+  }
+}
+
+INPUT
+=====
+
+{
+  "ConsultarSobregiroCliente02": {
+    "headerIn": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0012",
+      "tipoTransaccion": "201010902",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237",
+      "idCliente": "1720132339",
+      "tipoIdCliente": "0001"
+    },
+    "bodyIn": {
+      "numeroIdentificacion": "1714868450",
+      "tipoIdentificacion": "0001"
+    }
+  }
+}
+
+OUTPUT
+======
+
+{
+  "ConsultarSobregiroCliente02Response": {
+    "headerOut": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0012",
+      "tipoTransaccion": "201010902",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237",
+      "idCliente": "1720132339",
+      "tipoIdCliente": "0001",
+      "documento": {
+        "journals": {
+          "journal": {
+
+          }
+        }
+      }
+    },
+    "bodyOut": {
+      "cuentas": {
+        "cuenta": [
+          {
+            "numeroCuenta": "2100169318",
+            "sobregiro": "0"
+          },
+          {
+            "numeroCuenta": "2100169319",
+            "sobregiro": "0"
+          },
+          {
+            "numeroCuenta": "2100169359",
+            "sobregiro": "100"
+          },
+          {
+            "numeroCuenta": "2100169771",
+            "sobregiro": "500"
+          },
+          {
+            "numeroCuenta": "2100169772",
+            "sobregiro": "0"
+          },
+          {
+            "numeroCuenta": "2100169773",
+            "sobregiro": "0"
+          },
+          {
+            "numeroCuenta": "2100169774",
+            "sobregiro": "0"
+          },
+          {
+            "numeroCuenta": "2100169775",
+            "sobregiro": "0"
+          },
+          {
+            "numeroCuenta": "2100169425",
+            "sobregiro": "0"
+          }
+        ]
+      }
+    },
+    "error": {
+      "codigo": "0",
+      "mensaje": "TCSBRKT3_BP-OK",
+      "mensajeNegocio": "Transaccion exitosa.",
+      "tipo": "INFO",
+      "recurso": "WSClientes0109/ConsultarSobregiroCliente02",
+      "componente": "WSClientes0109",
+      "backend": "00638"
+    }
+  }
+}

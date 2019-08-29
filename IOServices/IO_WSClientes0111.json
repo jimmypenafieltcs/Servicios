@@ -1,0 +1,856 @@
+WSClientes0111
+
+INPUT
+=====
+{
+  "ConsultarResidenciaFiscal01": {
+    "headerIn": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "01",
+      "medio": "010004",
+      "aplicacion": "00350",
+      "agencia": "0012",
+      "tipoTransaccion": "201011101",
+      "usuario": "USINTERT",
+      "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+      "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4 ",
+      "fechaHora": "201906141505301262",
+      "idioma": "es-EC",
+      "sesion": "sdgfsdfgfdg5654654dfgdfg",
+      "ip": "10.0.176.237",
+      "bancs": {
+        "teller": "70624",
+        "terminal": "1",
+        "institucion": "3",
+        "agencia": "12",
+        "estacion": "10",
+        "aplicacion": "010",
+        "canal": "1"
+      }
+    },
+    "bodyIn": {
+      "tipoIdentificacion": "0003",
+      "identificacion": "1391752377001",
+      "cif": "5633179"
+    }
+  }
+}
+
+OUTPUT
+======
+{
+  "ConsultarResidenciaFiscal01Response": {
+        "headerOut": {
+          "dispositivo": "01010101010101010101010101010101",
+          "empresa": "0010",
+          "canal": "01",
+          "medio": "010004",
+          "aplicacion": "00350",
+          "agencia": "0012",
+          "tipoTransaccion": "201011101",
+          "usuario": "USINTERT",
+          "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+          "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+          "fechaHora": "201906141505301262",
+          "idioma": "es-EC",
+          "sesion": "sdgfsdfgfdg5654654dfgdfg",
+          "ip": "10.0.176.237",
+          "documento": {
+            "journals": {
+              "journal": {
+
+              }
+            }
+          }
+        },
+        "bodyOut": {
+          "datosGenerales": {
+            "tipoIdentificacion": "0003",
+            "identificacion": "1391752377001",
+            "cif": "5633179",
+            "tipoCliente": "J",
+            "nombreCliente": "LEANDRO",
+            "apellidoCliente": "FORTUN LUNA",
+            "paisNacimiento": "EC",
+            "ciudadNacimiento": "QUITO",
+            "fechaNacimiento": "02021959",
+            "paisDeConstitucion": "EC",
+            "tipoDePersonaNoFinanciera": "ACTIVA",
+            "razonSocial": "MARINE PROTEIN MARPROT S.A.",
+            "tipoNombreSociedad": "OECD206",
+            "tipoSociedad": "OECD601",
+            "tipoCuentaSociedad": "CRS101",
+            "aplicacionCertificadora": "00662",
+            "agencia": "00012",
+            "usuario": "00070624"
+          },
+          "residenciasFiscales": {
+            "residencia1": {
+              "paisResidenciaFiscal": "EC",
+              "fechaActualizacionResidenciaFiscal": "15072019",
+              "identificacionTributaria": "0905830584",
+              "tipoIdentificacionTributaria": "0001",
+              "tipoRazonSocial": "OECD204",
+              "tipoDireccionExterior": "OECD301",
+              "paisDireccionExterior": "EC",
+              "ciudadDireccionExterior": "CUENCA",
+              "calleDireccionExterior": "CALLE 1",
+              "numeroEdificioExterior": "N-122641",
+              "codigoPostalExterior": "170520",
+              "referenciaDireccionExterior": "Frente al parque El Ejido",
+              "estadoCertificacion": "CERTIFICADO",
+              "razonSocial": "TATA SOLUTION CENTER R1"
+            },
+            "residencia2": {
+              "fechaActualizacionResidenciaFiscal": "31129999",
+              "identificacionTributaria": "US 0905830584",
+              "tipoIdentificacionTributaria": "00",
+              "tipoRazonSocial": "01 OECD",
+              "tipoDireccionExterior": "204OECD",
+              "paisDireccionExterior": "301",
+              "ciudadDireccionExterior": "TALLAHASSEE",
+              "calleDireccionExterior": "US CALLE 1",
+              "numeroEdificioExterior": "N-1226",
+              "codigoPostalExterior": "41 170520",
+              "referenciaDireccionExterior": "Frente al parque El TALLAHASSEE",
+              "estadoCertificacion": "CERTIFICA",
+              "razonSocial": "019TATA SOLUTION CENTER R2"
+            },
+            "residencia3": {
+              "fechaActualizacionResidenciaFiscal": "31129999",
+              "identificacionTributaria": "CU 89040429948",
+              "tipoRazonSocial": "0010 O",
+              "tipoDireccionExterior": "ECD204O",
+              "paisDireccionExterior": "ECD",
+              "ciudadDireccionExterior": "20    SANTA CLARA",
+              "calleDireccionExterior": "301CU CALLE 1",
+              "numeroEdificioExterior": "N-1",
+              "codigoPostalExterior": "22641 1705",
+              "referenciaDireccionExterior": "Frente al parque El DE CAMACHO",
+              "estadoCertificacion": "CERTIF",
+              "razonSocial": "072019TATA SOLUTION CENTER R3"
+            }
+          },
+          "personasEjercenControl": {
+            "personaEjerceControl1": {
+              "tipoPersonaEjerceControl": "A",
+              "paisResidenciaFiscal": "CCI",
+              "identificacionTributaria": "ONISTAEC 1756844372",
+              "tipoNombre": "000",
+              "nombre": "1 OECD203LEANDRO",
+              "apellido": "FORTUN LUNA",
+              "paisDireccionExterior": "O",
+              "callePrincipalExterior": "ECD301EC LA PRIMERA Y LA Z",
+              "codigoPostalExterior": "1254N02  1",
+              "ciudadDireccionExterior": "7081     Quito",
+              "referenciaDireccionExterior": "AL FRENTE DE LAS EMPANADAS",
+              "fechaNacimiento": "99/99/9999",
+              "identificadorPersona": "4/04/1",
+              "porcentajeDeParticipacion": "989.32",
+              "fechaActualizacion": "31129999"
+            },
+            "personaEjerceControl2": {
+              "tipoPersonaEjerceControl": "015072019A",
+              "paisResidenciaFiscal": "CCI",
+              "identificacionTributaria": "ONISTAEC 1756844372",
+              "tipoNombre": "000",
+              "nombre": "1 OECD203YULAINNE",
+              "apellido": "FORTUN LUNA",
+              "paisDireccionExterior": "O",
+              "callePrincipalExterior": "ECD301EC LA PRIMERA Y LA Z",
+              "codigoPostalExterior": "1254N02  1",
+              "ciudadDireccionExterior": "7081     Quito",
+              "referenciaDireccionExterior": "AL FRENTE DE LAS EMPANADAS",
+              "fechaNacimiento": "99/99/9999",
+              "identificadorPersona": "4/04/1",
+              "porcentajeDeParticipacion": "989.32",
+              "fechaActualizacion": "31129999"
+            },
+            "personaEjerceControl3": {
+              "tipoPersonaEjerceControl": "015072019A",
+              "paisResidenciaFiscal": "CCI",
+              "identificacionTributaria": "ONISTAEC 1756844372",
+              "tipoNombre": "000",
+              "nombre": "1 OECD203VALERIA",
+              "apellido": "FORTUN LUNA",
+              "paisDireccionExterior": "O",
+              "callePrincipalExterior": "ECD301EC LA PRIMERA Y LA Z",
+              "codigoPostalExterior": "1254N02  1",
+              "ciudadDireccionExterior": "7081     Quito",
+              "referenciaDireccionExterior": "AL FRENTE DE LAS EMPANADAS",
+              "fechaNacimiento": "99/99/9999",
+              "identificadorPersona": "4/04/1",
+              "porcentajeDeParticipacion": "989.32",
+              "fechaActualizacion": "31129999"
+            },
+            "personaEjerceControl4": {
+              "tipoPersonaEjerceControl": "015072019A",
+              "paisResidenciaFiscal": "CCI",
+              "identificacionTributaria": "ONISTAEC 1756844372",
+              "tipoNombre": "000",
+              "nombre": "1 OECD203RICARDO",
+              "apellido": "FORTUN FERNANDEZ",
+              "paisDireccionExterior": "O",
+              "callePrincipalExterior": "ECD301EC LA PRIMERA Y LA Z",
+              "codigoPostalExterior": "1254N02  1",
+              "ciudadDireccionExterior": "7081     Quito",
+              "referenciaDireccionExterior": "AL FRENTE DE LAS EMPANADAS",
+              "fechaNacimiento": "99/99/9999",
+              "identificadorPersona": "4/04/1",
+              "porcentajeDeParticipacion": "989.32",
+              "fechaActualizacion": "31129999"
+            }
+          }
+        },
+        "error": {
+          "codigo": "0",
+          "mensaje": "TCSBRKT4_BP-OK",
+          "mensajeNegocio": "Transaccion exitosa.",
+          "tipo": "INFO",
+          "recurso": "WSClientes0111/ConsultarResidenciaFiscal01",
+          "componente": "WSClientes0111",
+          "backend": "00638"
+        }
+      }
+    }
+
+INPUT
+=====
+
+{
+  "CrearResidenciaFiscal23": {
+        "headerIn": {
+          "dispositivo": "[B@15719010",
+          "empresa": "0010",
+          "canal": "01",
+          "medio": "010003",
+          "aplicacion": "00662",
+          "agencia": "12",
+          "tipoTransaccion": "201011123",
+          "geolocalizacion": "0000",
+          "usuario": "USINTERT",
+          "guid": "46bf6201-ff35-4302-8c3f-f955285fc7fa",
+          "fechaHora": "201906221312220324",
+          "idioma": "es-EC",
+          "sesion": "d2b44a2e-597e-463d-bb54-1a8a9d425eba",
+          "ip": "10.0.176.76",
+          "bancs": {
+            "teller": "70624",
+            "terminal": "1",
+            "institucion": "3",
+            "agencia": "12",
+            "estacion": "10",
+            "aplicacion": "010",
+            "canal": "1"
+          }
+        },
+        "bodyIn": {
+          "datosGenerales": {
+            "tipoIdentificacion": "0003",
+            "identificacion": "1391752377001",
+            "cif": "5633179",
+            "tipoCliente": "J",
+            "apellidoCliente": "MARINE PROTEIN MARPROT S.A.",
+            "paisNacimiento": "EC",
+            "ciudadNacimiento": "045",
+            "fechaNacimiento": "04041982"
+          },
+          "residenciasFiscales": {
+            "residencia1": {
+              "paisResidenciaFiscal": "ES",
+              "fechaActualizacionResidenciaFiscal": "22062019",
+              "identificacionTributaria": "1791731093001",
+              "tipoIdentificacionTributaria": "0003",
+              "razonSocial": "SANGANO DULZON JUDICIAL",
+              "tipoRazonSocial": "OECD202",
+              "tipoDireccionExterior": "OECD301",
+              "paisDireccionExterior": "EC",
+              "ciudadDireccionExterior": "Bogota",
+              "calleDireccionExterior": "Via A la troncal",
+              "numeroEdificioExterior": "N528-88",
+              "codigoPostalExterior": "178956",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PROGRESO"
+            },
+            "residencia2": {
+              "paisResidenciaFiscal": "ES",
+              "fechaActualizacionResidenciaFiscal": "31129999",
+              "identificacionTributaria": "56789321",
+              "tipoIdentificacionTributaria": "0001",
+              "razonSocial": "TATA COMANDER2 CENTER",
+              "tipoRazonSocial": "OECD202",
+              "tipoDireccionExterior": "OECD301",
+              "paisDireccionExterior": "EC",
+              "ciudadDireccionExterior": "Milan",
+              "calleDireccionExterior": "Via Senato",
+              "numeroEdificioExterior": "N528-88",
+              "codigoPostalExterior": "178956",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PROGRESO"
+            },
+            "residencia3": {
+              "paisResidenciaFiscal": "US",
+              "fechaActualizacionResidenciaFiscal": "31129999",
+              "identificacionTributaria": "56789321",
+              "tipoIdentificacionTributaria": "0001",
+              "razonSocial": "TATA SOLUTION2 SENTER3",
+              "tipoRazonSocial": "OECD202",
+              "tipoDireccionExterior": "OECD301",
+              "paisDireccionExterior": "US",
+              "ciudadDireccionExterior": "Milan",
+              "calleDireccionExterior": "Via Senato",
+              "numeroEdificioExterior": "N528-88",
+              "codigoPostalExterior": "178956",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PROGRESO"
+            }
+          },
+          "personasEjercenControl": {
+            "personaEjerceControl1": {
+              "tipoPersonaEjerceControl": "0001",
+              "paisResidenciaFiscal": "BO",
+              "identificacionTributaria": "123456789",
+              "tipoIdentificacion": "0003",
+              "tipoNombre": "OECD205",
+              "nombre": "SEGUNDO",
+              "apellido": "PARATODALAVIDA",
+              "tipoDireccionExterior": "OECD303",
+              "paisDireccionExterior": "BO",
+              "callePrincipalExterior": "LA PRIMERA Y LA Z",
+              "numeroEdificioExterior": "1254N02",
+              "codigoPostalExterior": "17081",
+              "ciudadDireccionExterior": "NYQ",
+              "referenciaDireccionExterior": "AL FRENTE DE LAS EMPANADAS2",
+              "paisNacimiento": "BO",
+              "ciudadNacimiento": "UIO",
+              "fechaNacimiento": "99/99/9999",
+              "identificadorPersona": "0001",
+              "porcentajeDeParticipacion": "1.00"
+            },
+            "personaEjerceControl2": {
+              "fechaNacimiento": "99/99/9999",
+              "porcentajeDeParticipacion": "0.00"
+            },
+            "personaEjerceControl3": {
+              "fechaNacimiento": "99/99/9999",
+              "porcentajeDeParticipacion": "0.00"
+            },
+            "personaEjerceControl4": {
+              "fechaNacimiento": "99/99/9999",
+              "porcentajeDeParticipacion": "0.00"
+            }
+          }
+        }
+      }
+    }
+
+OUTPUT
+======
+{
+  "CrearResidenciaFiscal23Response": {
+        "headerOut": {
+          "dispositivo": "[B@15719010",
+          "empresa": "0010",
+          "canal": "01",
+          "medio": "010003",
+          "aplicacion": "00662",
+          "agencia": "12",
+          "tipoTransaccion": "201011123",
+          "geolocalizacion": "0000",
+          "usuario": "USINTERT",
+          "guid": "46bf6201-ff35-4302-8c3f-f955285fc7fa",
+          "fechaHora": "201906221312220324",
+          "idioma": "es-EC",
+          "sesion": "d2b44a2e-597e-463d-bb54-1a8a9d425eba",
+          "ip": "10.0.176.76",
+          "documento": {
+            "journals": {
+              "journal": {
+
+              }
+            }
+          }
+        },
+        "bodyOut": {
+          "datosGenerales": {
+            "tipoIdentificacion": "0003",
+            "identificacion": "1391752377001",
+            "cif": "5633179",
+            "tipoCliente": "J",
+            "apellidoCliente": "MARINE PROTEIN MARPROT S.A.",
+            "paisNacimiento": "EC",
+            "ciudadNacimiento": "045",
+            "fechaNacimiento": "04041982",
+            "aplicacionCertificadora": "00662",
+            "agencia": "00012",
+            "usuario": "00070560"
+          },
+          "residenciasFiscales": {
+            "residencia1": {
+              "paisResidenciaFiscal": "ES",
+              "fechaActualizacionResidenciaFiscal": "22062019",
+              "identificacionTributaria": "1791731093001",
+              "tipoIdentificacionTributaria": "0003",
+              "tipoRazonSocial": "OECD202",
+              "tipoDireccionExterior": "OECD301",
+              "paisDireccionExterior": "EC",
+              "ciudadDireccionExterior": "Bogota",
+              "calleDireccionExterior": "Via A la troncal",
+              "numeroEdificioExterior": "N528-88",
+              "codigoPostalExterior": "178956",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PROGRESO",
+              "razonSocial": "SANGANO DULZON JUDICIAL"
+            },
+            "residencia2": {
+              "paisResidenciaFiscal": "ES",
+              "fechaActualizacionResidenciaFiscal": "31129999",
+              "identificacionTributaria": "56789321",
+              "tipoIdentificacionTributaria": "0001",
+              "tipoRazonSocial": "OECD202",
+              "tipoDireccionExterior": "OECD301",
+              "paisDireccionExterior": "EC",
+              "ciudadDireccionExterior": "Milan",
+              "calleDireccionExterior": "Via Senato",
+              "numeroEdificioExterior": "N528-88",
+              "codigoPostalExterior": "178956",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PROGRESO",
+              "razonSocial": "TATA COMANDER2 CENTER"
+            },
+            "residencia3": {
+              "paisResidenciaFiscal": "US",
+              "fechaActualizacionResidenciaFiscal": "31129999",
+              "identificacionTributaria": "56789321",
+              "tipoIdentificacionTributaria": "0001",
+              "tipoRazonSocial": "OECD202",
+              "tipoDireccionExterior": "OECD301",
+              "paisDireccionExterior": "US",
+              "ciudadDireccionExterior": "Milan",
+              "calleDireccionExterior": "Via Senato",
+              "numeroEdificioExterior": "N528-88",
+              "codigoPostalExterior": "178956",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PROGRESO",
+              "razonSocial": "TATA SOLUTION2 SENTER3"
+            }
+          },
+          "personasEjercenControl": {
+            "personaEjerceControl1": {
+              "tipoPersonaEjerceControl": "0001",
+              "paisResidenciaFiscal": "BO",
+              "identificacionTributaria": "123456789",
+              "tipoIdentificacion": "0003",
+              "tipoNombre": "OECD205",
+              "nombre": "SEGUNDO",
+              "apellido": "PARATODALAVIDA",
+              "tipoDireccionExterior": "OECD303",
+              "paisDireccionExterior": "BO",
+              "callePrincipalExterior": "LA PRIMERA Y LA Z",
+              "numeroEdificioExterior": "1254N02",
+              "codigoPostalExterior": "17081",
+              "ciudadDireccionExterior": "NYQ",
+              "referenciaDireccionExterior": "AL FRENTE DE LAS EMPANADAS2",
+              "paisNacimiento": "BO",
+              "ciudadNacimiento": "UIO",
+              "fechaNacimiento": "99/99/9999",
+              "identificadorPersona": "0001",
+              "porcentajeDeParticipacion": "1.00",
+              "fechaActualizacion": "27082019"
+            },
+            "personaEjerceControl2": {
+              "fechaNacimiento": "99/99/9999",
+              "porcentajeDeParticipacion": "0.00",
+              "fechaActualizacion": "27082019"
+            },
+            "personaEjerceControl3": {
+              "fechaNacimiento": "99/99/9999",
+              "porcentajeDeParticipacion": "0.00",
+              "fechaActualizacion": "27082019"
+            },
+            "personaEjerceControl4": {
+              "fechaNacimiento": "99/99/9999",
+              "porcentajeDeParticipacion": "0.00",
+              "fechaActualizacion": "27082019"
+            }
+          }
+        },
+        "error": {
+          "codigo": "0",
+          "mensaje": "TCSBRKT4_BP-OK",
+          "mensajeNegocio": "Tu transacción ha sido procesada satisfactoriamente.",
+          "tipo": "INFO",
+          "recurso": "WSClientes0111/CrearResidenciaFiscal23",
+          "componente": "WSClientes0111",
+          "backend": "00638"
+        }
+      }
+    }
+
+INPUT
+=====
+
+{
+  "ActualizarResidenciaFiscal32": {
+        "headerIn": {
+          "dispositivo": "01010101010101010101010101010101",
+          "empresa": "0010",
+          "canal": "01",
+          "medio": "010004",
+          "aplicacion": "00350",
+          "agencia": "0012",
+          "tipoTransaccion": "201011132",
+          "usuario": "USINTERT",
+          "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+          "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4 ",
+          "fechaHora": "201906141505301262",
+          "idioma": "es-EC",
+          "sesion": "sdgfsdfgfdg5654654dfgdfg",
+          "ip": "10.0.176.237",
+          "bancs": {
+            "teller": "70624",
+            "terminal": "1",
+            "institucion": "3",
+            "agencia": "12",
+            "estacion": "10",
+            "aplicacion": "010",
+            "canal": "1"
+          }
+        },
+        "bodyIn": {
+          "datosGenerales": {
+            "tipoIdentificacion": "0003",
+            "identificacion": "1391752377001",
+            "cif": "5633179",
+            "tipoCliente": "J",
+            "apellidoCliente": "MARINE PROTEIN MARPROT S.A.",
+            "paisNacimiento": "EC",
+            "ciudadNacimiento": "045",
+            "fechaNacimiento": "04041989",
+            "paisDeConstitucion": "506",
+            "tipoDePersonaNoFinanciera": "2019"
+          },
+          "residenciasFiscales": {
+            "residencia1": {
+              "paisResidenciaFiscal": "007",
+              "fechaActualizacionResidenciaFiscal": "OGRESO 2",
+              "identificacionTributaria": "0560ES 1791731093001",
+              "razonSocial": "2062019SANGANO DULZON JUDICIAL",
+              "tipoRazonSocial": "0003",
+              "tipoDireccionExterior": "OECD202",
+              "paisDireccionExterior": "OEC",
+              "ciudadDireccionExterior": "956    Bogota",
+              "calleDireccionExterior": "D301EC Via A la troncal",
+              "numeroEdificioExterior": "N5",
+              "codigoPostalExterior": "28-88  178",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PR"
+            },
+            "residencia2": {
+              "fechaActualizacionResidenciaFiscal": "OGRESO 3",
+              "identificacionTributaria": "ES 56789321",
+              "razonSocial": "1129999TATA COMANDER2 CENTER",
+              "tipoRazonSocial": "0001",
+              "tipoDireccionExterior": "OECD202",
+              "paisDireccionExterior": "OEC",
+              "ciudadDireccionExterior": "956    Milan",
+              "calleDireccionExterior": "D301EC Via Senato",
+              "numeroEdificioExterior": "N5",
+              "codigoPostalExterior": "28-88  178",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PR"
+            },
+            "residencia3": {
+              "fechaActualizacionResidenciaFiscal": "OGRESO 3",
+              "identificacionTributaria": "US 56789321",
+              "razonSocial": "1129999TATA SOLUTION2 SENTER3",
+              "tipoRazonSocial": "0001",
+              "tipoDireccionExterior": "OECD202",
+              "paisDireccionExterior": "OEC",
+              "ciudadDireccionExterior": "956    Milan",
+              "calleDireccionExterior": "D301US Via Senato",
+              "numeroEdificioExterior": "N5",
+              "codigoPostalExterior": "28-88  178",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PR"
+            }
+          },
+          "personasEjercenControl": {
+            "personaEjerceControl1": {
+              "tipoPersonaEjerceControl": "000",
+              "paisResidenciaFiscal": "1",
+              "identificacionTributaria": "BO 123456789",
+              "tipoNombre": "0003",
+              "nombre": "OECD205SEGUNDO",
+              "apellido": "PARATODALAVIDA",
+              "paisDireccionExterior": "OEC",
+              "callePrincipalExterior": "D303BO LA PRIMERA Y LA Z",
+              "numeroEdificioExterior": "12",
+              "codigoPostalExterior": "54N02  170",
+              "ciudadDireccionExterior": "81     NYQ",
+              "referenciaDireccionExterior": "AL FRENTE DE LAS EMPANADAS2",
+              "fechaNacimiento": "BO UIO99",
+              "identificadorPersona": "99 999",
+              "porcentajeDeParticipacion": "9.00"
+            },
+            "personaEjerceControl2": {
+              "tipoPersonaEjerceControl": "9999999",
+              "fechaNacimiento": "99",
+              "identificadorPersona": "99 999",
+              "porcentajeDeParticipacion": "0.09"
+            },
+            "personaEjerceControl3": {
+              "tipoPersonaEjerceControl": "9999999",
+              "fechaNacimiento": "99",
+              "identificadorPersona": "99 999",
+              "porcentajeDeParticipacion": "0.09"
+            },
+            "personaEjerceControl4": {
+              "tipoPersonaEjerceControl": "9999999",
+              "fechaNacimiento": "99",
+              "identificadorPersona": "99 999",
+              "porcentajeDeParticipacion": "0.09"
+            }
+          }
+        }
+      }
+    }
+
+
+OUTPUT
+======
+
+{
+  "ActualizarResidenciaFiscal32Response": {
+        "headerOut": {
+          "dispositivo": "01010101010101010101010101010101",
+          "empresa": "0010",
+          "canal": "01",
+          "medio": "010004",
+          "aplicacion": "00350",
+          "agencia": "0012",
+          "tipoTransaccion": "201011132",
+          "usuario": "USINTERT",
+          "unicidad": "UZhDOa2GXtkAK2QovFagnnSnQSGAFSKyTIIv1axc=",
+          "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+          "fechaHora": "201906141505301262",
+          "idioma": "es-EC",
+          "sesion": "sdgfsdfgfdg5654654dfgdfg",
+          "ip": "10.0.176.237",
+          "documento": {
+            "journals": {
+              "journal": {
+
+              }
+            }
+          }
+        },
+        "bodyOut": {
+          "datosGenerales": {
+            "tipoIdentificacion": "0003",
+            "identificacion": "1391752377001",
+            "cif": "5633179",
+            "tipoCliente": "J",
+            "apellidoCliente": "MARINE PROTEIN MARPROT S.A.",
+            "paisNacimiento": "EC",
+            "ciudadNacimiento": "045",
+            "fechaNacimiento": "04041989",
+            "paisDeConstitucion": "506",
+            "tipoDePersonaNoFinanciera": "2019",
+            "aplicacionCertificadora": "00350",
+            "agencia": "00012",
+            "usuario": "00070560"
+          },
+          "residenciasFiscales": {
+            "residencia1": {
+              "paisResidenciaFiscal": "007",
+              "fechaActualizacionResidenciaFiscal": "OGRESO 2",
+              "identificacionTributaria": "0560ES 1791731093001",
+              "tipoRazonSocial": "0003",
+              "tipoDireccionExterior": "OECD202",
+              "paisDireccionExterior": "OEC",
+              "ciudadDireccionExterior": "956    Bogota",
+              "calleDireccionExterior": "D301EC Via A la troncal",
+              "numeroEdificioExterior": "N5",
+              "codigoPostalExterior": "28-88  178",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PR",
+              "razonSocial": "2062019SANGANO DULZON JUDICIAL"
+            },
+            "residencia2": {
+              "fechaActualizacionResidenciaFiscal": "OGRESO 3",
+              "identificacionTributaria": "ES 56789321",
+              "tipoRazonSocial": "0001",
+              "tipoDireccionExterior": "OECD202",
+              "paisDireccionExterior": "OEC",
+              "ciudadDireccionExterior": "956    Milan",
+              "calleDireccionExterior": "D301EC Via Senato",
+              "numeroEdificioExterior": "N5",
+              "codigoPostalExterior": "28-88  178",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PR",
+              "razonSocial": "1129999TATA COMANDER2 CENTER"
+            },
+            "residencia3": {
+              "fechaActualizacionResidenciaFiscal": "OGRESO 3",
+              "identificacionTributaria": "US 56789321",
+              "tipoRazonSocial": "0001",
+              "tipoDireccionExterior": "OECD202",
+              "paisDireccionExterior": "OEC",
+              "ciudadDireccionExterior": "956    Milan",
+              "calleDireccionExterior": "D301US Via Senato",
+              "numeroEdificioExterior": "N5",
+              "codigoPostalExterior": "28-88  178",
+              "referenciaDireccionExterior": "Diagonal al parque central de Milan",
+              "estadoCertificacion": "EN PR",
+              "razonSocial": "1129999TATA SOLUTION2 SENTER3"
+            }
+          },
+          "personasEjercenControl": {
+            "personaEjerceControl1": {
+              "tipoPersonaEjerceControl": "000",
+              "paisResidenciaFiscal": "1",
+              "identificacionTributaria": "BO 123456789",
+              "tipoNombre": "0003",
+              "nombre": "OECD205SEGUNDO",
+              "apellido": "PARATODALAVIDA",
+              "paisDireccionExterior": "OEC",
+              "callePrincipalExterior": "D303BO LA PRIMERA Y LA Z",
+              "numeroEdificioExterior": "12",
+              "codigoPostalExterior": "54N02  170",
+              "ciudadDireccionExterior": "81     NYQ",
+              "referenciaDireccionExterior": "AL FRENTE DE LAS EMPANADAS2",
+              "fechaNacimiento": "BO UIO99",
+              "identificadorPersona": "99 999",
+              "porcentajeDeParticipacion": "9.00",
+              "fechaActualizacion": "27082019"
+            },
+            "personaEjerceControl2": {
+              "tipoPersonaEjerceControl": "9999999",
+              "fechaNacimiento": "99",
+              "identificadorPersona": "99 999",
+              "porcentajeDeParticipacion": "0.09",
+              "fechaActualizacion": "27082019"
+            },
+            "personaEjerceControl3": {
+              "tipoPersonaEjerceControl": "9999999",
+              "fechaNacimiento": "99",
+              "identificadorPersona": "99 999",
+              "porcentajeDeParticipacion": "0.09",
+              "fechaActualizacion": "27082019"
+            },
+            "personaEjerceControl4": {
+              "tipoPersonaEjerceControl": "9999999",
+              "fechaNacimiento": "99",
+              "identificadorPersona": "99 999",
+              "porcentajeDeParticipacion": "0.09",
+              "fechaActualizacion": "27082019"
+            }
+          }
+        },
+        "error": {
+          "codigo": "0",
+          "mensaje": "TCSBRKT3_BP-OK",
+          "mensajeNegocio": "Tu transacción ha sido procesada satisfactoriamente.",
+          "tipo": "INFO",
+          "recurso": "WSClientes0111/ActualizarResidenciaFiscal32",
+          "componente": "WSClientes0111",
+          "backend": "00638"
+        }
+      }
+    }
+
+INPUT
+======
+
+{
+  "ActualizarEstadoResidenciaFiscal34": {
+        "headerIn": {
+          "dispositivo": "01010101010101010101010101010101",
+          "empresa": "0010",
+          "canal": "02",
+          "medio": "02007",
+          "aplicacion": "00655",
+          "agencia": "0024",
+          "tipoTransaccion": "201011134",
+          "usuario": "USRTAGEW",
+          "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+          "fechaHora": "201906171115556479",
+          "idioma": "es-EC",
+          "sesion": "sdgfsdfgfdg5654654dfgdfg",
+          "ip": "10.0.177.93",
+          "bancs": {
+            "teller": "70560",
+            "terminal": "1",
+            "institucion": "3",
+            "agencia": "12",
+            "estacion": "10",
+            "aplicacion": "010",
+            "canal": "1"
+          }
+        },
+        "bodyIn": {
+          "datosGenerales": {
+            "tipoIdentificacion": "0003",
+            "identificacion": "1391752377001",
+            "cif": "5633179",
+            "tipoCliente": "J"
+          },
+          "residenciasFiscales": {
+            "residencia1": {
+              "paisResidenciaFiscal": "ES",
+              "fechaActualizacionResidenciaFiscal": "25062019",
+              "estadoCertificacion": "CERTIFICADO"
+            },
+            "residencia2": {
+
+            },
+            "residencia3": {
+
+            }
+          }
+        }
+      }
+    }
+
+OUTPUT
+======
+
+{
+  "ActualizarEstadoResidenciaFiscal34Response": {
+        "headerOut": {
+          "dispositivo": "01010101010101010101010101010101",
+          "empresa": "0010",
+          "canal": "02",
+          "medio": "020007",
+          "aplicacion": "00655",
+          "agencia": "0024",
+          "tipoTransaccion": "201011134",
+          "usuario": "USRTAGEW",
+          "guid": "F9168C5ECEB24faaB6BF329BF39FA1E4",
+          "fechaHora": "201906171115556479",
+          "idioma": "es-EC",
+          "sesion": "sdgfsdfgfdg5654654dfgdfg",
+          "ip": "10.0.177.93",
+          "idCliente": "1720132339",
+          "tipoIdCliente": "0001",
+          "documento": {
+            "journals": {
+              "journal": {
+
+              }
+            }
+          }
+        },
+        "error": {
+          "codigo": "1",
+          "mensaje": "TCSBRKT3_BP-No puede certificar una residencia fiscal en estado Certificado o Eliminado.",
+          "mensajeNegocio": "Existe un inconveniente para ejecutar tu transacción. Por favor intenta más tarde.",
+          "tipo": "ERROR",
+          "recurso": "WSClientes0111/ActualizarEstadoResidenciaFiscal34",
+          "componente": "ActualizarEstadoResidenciaFiscal34",
+          "backend": "00638"
+        }
+      }
+    }
