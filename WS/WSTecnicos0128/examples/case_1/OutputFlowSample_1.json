@@ -31,7 +31,7 @@
       "mensaje": "TCSBRKT4_Ingreso registro con éxito",
       "mensajeNegocio": "Ingreso registro con éxito",
       "tipo": "INFO",
-      "recurso": "WSTecnicos00XX/soporteAuditoriaCelulas51Response",
+      "recurso": "WSTecnicos0128/soporteAuditoriaCelulas51Response",
       "componente": "soporteAuditoriaCelulas51Response",
       "backend": "00635"
     }
