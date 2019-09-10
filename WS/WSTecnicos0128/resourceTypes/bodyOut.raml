@@ -1,0 +1,11 @@
+#%RAML 1.0 Library
+uses:
+ registro: registroOut.raml
+usage:
+ detail reponse
+types:
+  bodyOut:
+    properties:
+      registro:
+        type: registro.registro
+        required: true

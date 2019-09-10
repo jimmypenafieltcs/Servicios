@@ -1,0 +1,18 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  result insert register
+types:
+  registro:
+    description: result insert register
+    properties:
+      id:
+        type: number
+        required: true
+        example: 54215
+      estado:
+        type: string
+        maxLength: 10
+        required: true
+        example: "OK"

@@ -1,0 +1,15 @@
+#%RAML 1.0 Library
+uses:
+  celula: celula.raml
+  registro: registroIn.raml
+usage:
+  create log client from registro
+types:
+  bodyIn:
+    properties:
+      celula:
+        type: celula.celula
+        required: true
+      registro:
+        type: registro.registro
+        required: true

@@ -1,0 +1,24 @@
+#%RAML 1.0
+title: WSTecnicos0128
+baseUri: /Omnicanalidad/IntegrationBus/WSTecnicos0128
+version: v1.0
+description: register log db risk
+uses:
+  request: ../resourceTypes/request.raml
+  response: ../resourceTypes/response.raml
+/WSTecnicos0128:
+  post:
+    body:
+      application/json:
+        type: request.soporteAuditoriaCelulas51
+        examples:
+          # validate client code
+          case_1: !include ../examples/case_1/InputFlowSample_1.json
+    responses:
+      200:
+        body:
+          application/json:
+            type: response.soporteAuditoriaCelulas51Response
+            examples:
+              # Transacction OK. validate client code successful
+              case_1: !include ../examples/case_1/OutputFlowSample_1.json

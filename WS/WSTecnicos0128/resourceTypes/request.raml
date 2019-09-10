@@ -1,0 +1,17 @@
+#%RAML 1.0 Library
+usage: input for clientes
+uses:
+  headerIn: ../../libraries/type/headerIn.raml
+  bodyIn: bodyIn.raml
+types:
+  soporteAuditoriaCelulas51:
+    description: insert log in database
+    properties:
+      soporteAuditoriaCelulas51:
+        properties:
+          headerIn:
+            type: headerIn.headerIn
+            required: true
+          bodyIn:
+            type: bodyIn.bodyIn
+            required: true

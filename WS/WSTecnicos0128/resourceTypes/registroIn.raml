@@ -1,0 +1,82 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  log
+types:
+  registro:
+    description: log
+    properties:
+      producto:
+        type: string
+        maxLength: 60
+        required: true
+        description:  shared client code
+      tipoProducto:
+        type: string
+        maxLength: 60
+        required: true
+        description: name or description of client
+      numeroProducto:
+        type: string
+        maxLength: 60
+        required: true
+        description: number of product
+      fechaTransaccion:
+        type: string
+        required: true
+        maxLength: 25
+        example: "10-09-2019 12:00:00.456"
+      fechaIngreso:
+        type: string
+        required: true
+        maxLength: 25
+        example: "10-09-2019 12:00:10.692"
+      identificación:
+        type: string
+        maxLength: 24
+        required: true
+        example: "1752326521"
+      tipoIdentificacion:
+        type: string
+        maxLength: 4
+        required: true
+        example: "0001"
+      telefonoCliente:
+        type: string
+        maxLength: 20
+        required: true
+        example: "0996325112"
+      telefonoCliente:
+        type: string
+        maxLength: 60
+        required: true
+        description: mobile number of client
+      ipCliente:
+        type: string
+        maxLength: 30
+        required: true
+        example: "69.69.69.69"
+      deliveryProducto:
+        type: boolean
+        required: true
+        example: false
+      dispositivo:
+        type: string
+        maxLength: 60
+        required: true
+        example: "PC"
+      monto:
+        type: number
+        required: true
+        example: 0.0
+      userAgent:
+        type: string
+        maxLength: 500
+        required: true
+        example: "Opera/9.80 (Linux armv7l) Presto/2.12.407 Version/12.51 , D50u-D1-UHD/V1.5.16-UHD (Vizio, D50u-D1, Wireless)"
+      adicional:
+        type: string
+        maxLength: 500
+        required: true
+        example: "creado en agencia"
