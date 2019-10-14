@@ -1,0 +1,24 @@
+#%RAML 1.0
+title: ORQProductos0073
+baseUri: /Omnicanalidad/IntegrationBus/ORQProductos0073
+version: v1.0
+description: It'll finds details products
+uses:
+  request: ../resourceTypes/request.raml
+  response: ../resourceTypes/response.raml
+/ORQProductos0073:
+  post:
+    body:
+      application/json:
+        type: request.consultarMoraCliente01
+        examples:
+          # validate client code
+          case_1: !include ../examples/case_1/InputFlowSample_1.json
+    responses:
+      200:
+        body:
+          application/json:
+            type: response.consultarMoraCliente01Response
+            examples:
+              # Transacction OK. validate client code successful
+              case_1: !include ../examples/case_1/OutputFlowSample_1.json

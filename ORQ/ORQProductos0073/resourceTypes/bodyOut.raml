@@ -1,0 +1,19 @@
+#%RAML 1.0 Library
+uses:
+ credito: credito.raml
+ tarjeta: tarjeta.raml
+usage:
+ detail reponse
+types:
+  bodyOut:
+    properties:
+      creditos:
+        type: array
+        items:
+          properties:
+            type: credito.credito
+      tarjetas:
+        type: array
+        items:
+          properties:
+            type: tarjeta.tarjeta

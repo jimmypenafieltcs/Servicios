@@ -1,0 +1,20 @@
+#%RAML 1.0 Library
+usage: Output for Clientes
+uses:
+  headerOut: ../../libraries/type/headerOut.raml
+  bodyOut: bodyOut.raml
+  error: ../../libraries/type/error.raml
+types:
+  consultarMoraCliente01Response:
+    properties:
+      consultarMoraCliente01Response:
+        properties:
+          headerOut:
+            type: headerOut.headerOut
+            required: true
+          bodyOut:
+            type: bodyOut.bodyOut
+            required: true
+          error:
+            type: error.error
+            required: true

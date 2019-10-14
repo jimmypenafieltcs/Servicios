@@ -1,0 +1,34 @@
+#%RAML 1.0 Library
+usage:
+  log source
+types:
+  tarjeta:
+    description: log source
+    properties:
+      marca:
+        type: string
+        maxLength: 30
+        required: false
+        description:  credit card brand
+      subsegmento:
+        type: string
+        maxLength: 60
+        required: false
+        description: segment credit card
+      tipo:
+        type: string
+        maxLength: 60
+        required: false
+        description: credit card kind
+        example: "internacional"
+      numero:
+        type: string
+        required: false
+        maxLength: 20
+        description: debt balance
+        example: "1092.19"
+      diasMora:
+        type: number
+        required: false
+        example: 2
+        description: days mora

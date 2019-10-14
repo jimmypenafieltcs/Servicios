@@ -1,0 +1,37 @@
+{
+  "consultarMoraCliente01Response": {
+    "headerOut": {
+      "dispositivo": "01010101010101010101010101010101",
+      "empresa": "0010",
+      "canal": "02",
+      "medio": "020002",
+      "aplicacion": "00270",
+      "agencia": "0016",
+      "tipoTransaccion": "203000151",
+      "geolocalizacion": "",
+      "usuario": "USINTERT",
+      "unicidad": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+      "guid": "eyJzdWIiOiIxMjzMDgxOTgd0cmdlbnRvIiwiYWRt",
+      "fechaHora": "201909091313131262",
+      "filler": "",
+      "idioma": "es-EC",
+      "sesion": "2da920f8-d728-4d89-b2b5-e4ae1aab51b6",
+      "ip": "10.192.168.45",
+      "idCliente": "1720166329",
+      "tipoIdCliente": "0001"
+    },
+    "bodyOut": {
+      "creditos": [],
+      "tarjetas": []
+    },
+    "error": {
+      "codigo": "1",
+      "mensaje": "TCSBRKT4_Cliente no posee productos de creditos y tarjetas en mora",
+      "mensajeNegocio": "Cliente no posee productos de creditos o tarjetas",
+      "tipo": "INFO",
+      "recurso": "WSTecnicos00XX/consultarMoraCliente01Response",
+      "componente": "consultarMoraCliente01Response",
+      "backend": "00635"
+    }
+  }
+}

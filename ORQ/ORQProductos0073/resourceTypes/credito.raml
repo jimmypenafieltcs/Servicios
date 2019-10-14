@@ -1,0 +1,42 @@
+#%RAML 1.0 Library
+uses:
+
+usage:
+  log
+types:
+  credito:
+    description: loan detail
+    properties:
+      numero:
+        type: string
+        maxLength: 30
+        required: false
+        description:  id loan
+      nombreProducto:
+        type: string
+        maxLength: 60
+        required: false
+        description: name loan
+      montoDeuda:
+        type: string
+        maxLength: 8
+        required: false
+        description: balance loan
+        example: "10000.69"
+      saldoMontoDueda:
+        type: string
+        required: false
+        maxLength: 25
+        description: debt balance
+        example: "1092.19"
+      valorCuota:
+        type: string
+        required: false
+        maxLength: 25
+        description: quota value
+        example: "150.91"
+      diasMora:
+        type: number
+        required: false
+        example: 2
+        description: days mora
